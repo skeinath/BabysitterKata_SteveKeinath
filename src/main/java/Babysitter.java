@@ -10,13 +10,16 @@ public class Babysitter {
 		int workedBetweenBedtimeAndMidnight = 0;
 		int betweenBedtimeAndMidnightRate = 8;
 		
+		int workedBetweenMidnightAndEndTime = 0;
 		
-		if(endTime < 5)
+		
+		if(endTime < 5) {
 			workedBetweenBedtimeAndMidnight = (12 - bedtime) * betweenBedtimeAndMidnightRate;
-		else
+			workedBetweenMidnightAndEndTime = endTime;
+		} else {
 			workedBetweenBedtimeAndMidnight = (endTime - bedtime) * betweenBedtimeAndMidnightRate;
-		
-		return workedBetweenBedtimeAndMidnight;
+		}
+		return workedBetweenMidnightAndEndTime;
 	}
 
 }
