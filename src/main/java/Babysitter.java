@@ -3,7 +3,9 @@ public class Babysitter {
 
 	public int hoursWorked(int startTime, int bedtime, int endTime) {
 
-		return bedtime - startTime;
+		int workedBeforeBedtime = bedtime - startTime;
+		
+		return workedBeforeBedtime;
 	}
 
 }
