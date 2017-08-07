@@ -21,7 +21,8 @@ public class Babysitter {
 			workedBetweenBedtimeAndMidnight = (endTime - bedtime) * betweenBedtimeAndMidnightRate;
 		}
 		
-		return workedBetweenMidnightAndEndTime;
+		
+		return paidBeforeBedtime + workedBetweenBedtimeAndMidnight + workedBetweenMidnightAndEndTime;
 	}
 
 }
