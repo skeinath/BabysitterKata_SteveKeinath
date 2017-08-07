@@ -1,9 +1,9 @@
 
 public class Babysitter {
 
-	public int hoursWorked(int startTime, int endTime) {
+	public int hoursWorked(int startTime, int bedtime, int endTime) {
 
-		return endTime - startTime;
+		return bedtime - startTime;
 	}
 
 }

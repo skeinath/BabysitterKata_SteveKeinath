@@ -11,7 +11,8 @@ public class BabysitterTest {
     }
  
     @Test
-    public void whenHoursWorkedIsPassedAStartTimeAndEndTimeItReturnsTheDifferenceOfTheStartFromTheEnd() {
-        assertEquals(7, babysitter.hoursWorked(5,12));
+    public void whenHoursWorkedIsPassedAStartTimeAndBedtimeAndEndTimeItReturnsTheTimeWorkedBeforeBedtime() {
+        assertEquals(3, babysitter.hoursWorked(5,8,12));
+        assertEquals(4, babysitter.hoursWorked(5,9,2));
     }
 }
