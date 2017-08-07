@@ -8,11 +8,13 @@ public class Babysitter {
 		int paidBeforeBedtime = workedBeforeBedtime * beforeBedtimeRate;
 		
 		int workedBetweenBedtimeAndMidnight = 0;
+		int betweenBedtimeAndMidnightRate = 8;
+		
 		
 		if(endTime < 5)
-			workedBetweenBedtimeAndMidnight = 12 - bedtime;
+			workedBetweenBedtimeAndMidnight = (12 - bedtime) * betweenBedtimeAndMidnightRate;
 		else
-			workedBetweenBedtimeAndMidnight = endTime - bedtime;
+			workedBetweenBedtimeAndMidnight = (endTime - bedtime) * betweenBedtimeAndMidnightRate;
 		
 		return workedBetweenBedtimeAndMidnight;
 	}
